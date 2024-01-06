@@ -74,7 +74,7 @@ text_key = {
 }
 
 print(f'press `{text_key.get(switch_key) or switch_key}` to quickly enter `switch + enter`\n'
-      f'press {text_key.get(transmit_key) or transmit_key}` to quickly enter `transmit `\n'
+      f'press `{text_key.get(transmit_key) or transmit_key}` to quickly enter `transmit `\n'
       'https://github.com/meeboo3/LethalCompanyMacro v1.1.0')
 keyboard.on_press_key(switch_key, switch)
 keyboard.on_press_key(transmit_key, transmit)
