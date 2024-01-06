@@ -5,8 +5,8 @@
 从[release](https://github.com/meeboo3/LethalCompanyMacro/releases)处下载宏，在游戏运行时启动  
 download the macro from [release](https://github.com/meeboo3/LethalCompanyMacro/releases), run it while the game is running
 
-按下 `↑` 会输入 `switch <enter>`，意味着快捷切换视角  
-Pressing `↑` will input `switch <enter>`, which means quickly switching perspectives
+按下 `pagedown` 会输入 `switch <enter>`，意味着快捷切换视角  
+Pressing `pagedown` will input `switch <enter>`, which means quickly switching perspectives
 
 按下 `↓` 会输入 `transmit ` (包含空格)  
 Pressing `↓` will enter `transmit` (including spaces)
@@ -22,13 +22,13 @@ Create a new `LCM.txt` file in the directory where the macro is located
 
 格式 | Format
 ```text
-up<switch> down<transmit>
+<switch> <transmit>
 ```
 
 .e.g
 
 ```text
-pageup pagedown
+pagedown down
 ```
 ```text
 k l

@@ -9,8 +9,8 @@ if os.path.exists('LCM.txt'):
     with open('LCM.txt', encoding='utf-8', mode='rt') as f:
         switch_key, transmit_key = f.read().split(' ')
 else:
-    switch_key = 'up'
-    transmit_key = 'down'
+    switch_key = 'down'
+    transmit_key = 'pagedown'
 
 curr_copy = ''
 run = False
@@ -66,9 +66,16 @@ def transmit(evt):
     log('enter transmit')
 
 
-print('press `↑` to quickly enter `switch + enter`\n'
-      'press `↓` to quickly enter `transmit `\n'
-      'https://github.com/meeboo3/LethalCompanyMacro')
+text_key = {
+    'up': '↑',
+    'right': '→',
+    'down': '↓',
+    'left': '←'
+}
+
+print(f'press `{text_key.get(switch_key) or switch_key}` to quickly enter `switch + enter`\n'
+      f'press {text_key.get(transmit_key) or transmit_key}` to quickly enter `transmit `\n'
+      'https://github.com/meeboo3/LethalCompanyMacro v1.1.0')
 keyboard.on_press_key(switch_key, switch)
 keyboard.on_press_key(transmit_key, transmit)
 keyboard.wait()
