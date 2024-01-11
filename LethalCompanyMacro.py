@@ -9,8 +9,8 @@ if os.path.exists('LCM.txt'):
     with open('LCM.txt', encoding='utf-8', mode='rt') as f:
         switch_key, transmit_key = f.read().split(' ')
 else:
-    switch_key = 'down'
-    transmit_key = 'pagedown'
+    switch_key = 'pagedown'
+    transmit_key = 'down'
 
 curr_copy = ''
 run = False
