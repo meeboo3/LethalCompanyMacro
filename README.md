@@ -28,7 +28,7 @@ Create a new `LCM.txt` file in the directory where the macro is located
 .e.g
 
 ```text
-pagedown down
+page_down down
 ```
 ```text
 k l
