@@ -31,5 +31,5 @@ Create a new `LCM.txt` file in the directory where the macro is located
 page_down down
 ```
 ```text
-k l
+ctrl+k l
 ```
